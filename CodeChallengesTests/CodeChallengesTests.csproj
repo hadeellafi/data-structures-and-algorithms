@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\data-structures-and-algorithms\data-structures-and-algorithms.csproj" />
+  </ItemGroup>
+
 </Project>
