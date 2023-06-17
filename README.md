@@ -4,4 +4,6 @@
 
 [Challenge 01 Reverse Array](./readMeFiles/CC01.md)
 
+[Challenge 02 array-insert-shift](./readMeFiles/CC02.md)
+
 ---
