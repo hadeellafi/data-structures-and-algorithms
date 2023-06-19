@@ -11,7 +11,7 @@ namespace CodeChallengesTests {
         public void reverceTest(int[] arr, int[] expectedArr)
         {
             int[] arrTest = arr;
-            int[] result =CC01.reverce(arrTest);
+            int[] result =main.reverce(arrTest);
             Assert.Equal(expectedArr, result);
         }
     }

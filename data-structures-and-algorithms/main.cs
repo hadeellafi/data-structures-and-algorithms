@@ -2,13 +2,19 @@
 
 namespace data_structures_and_algorithms
 {
-    public class CC01
+    public class main
     {
         static void Main(string[] args)
         {
-            int[] arr = { };
-            int[] result = reverce(arr);
-            Console.WriteLine(result != null ? string.Join(", ", result) : "null");
+            //CC01
+            /* int[] arr = { };
+             int[] result = reverce(arr);
+             Console.WriteLine(result != null ? string.Join(", ", result) : "null");*/
+
+            
+            //CC03
+            int[] arr = { 0, 1, 2, 3, 4};
+            Console.WriteLine(CC03.BinarySearch(arr,4));
         }
 
         public static int[] reverce(int[] arr)
