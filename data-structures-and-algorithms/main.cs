@@ -13,8 +13,16 @@ namespace data_structures_and_algorithms
 
             
             //CC03
+            /*
             int[] arr = { 0, 1, 2, 3, 4};
-            Console.WriteLine(CC03.BinarySearch(arr,4));
+            Console.WriteLine(CC03.BinarySearch(arr,4));*/
+
+            //CC05
+            List list = new List();
+            list.InsertEnd(2);
+            list.InsertEnd(3);
+            Console.WriteLine(list.IsInclude(3));
+            Console.WriteLine(list.ToString());
         }
 
         public static int[] reverce(int[] arr)
