@@ -8,4 +8,8 @@
 
 [Challenge 03 array-binary-search](./readMeFiles/CC03.md)
 
+[Challenge 04 fibonacci](./readMeFiles/CC04.md)
+
+[Challenge 05 Single Linked List Implementation](./readMeFiles/CC05.md)
+
 ---
