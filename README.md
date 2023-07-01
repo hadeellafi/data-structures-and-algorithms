@@ -12,4 +12,7 @@
 
 [Challenge 05 Single Linked List Implementation](./readMeFiles/CC05.md)
 
+[Challenge 06 linked-list-insertions](./readMeFiles/CC06.md)
+
+
 ---
