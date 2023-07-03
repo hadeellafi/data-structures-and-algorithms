@@ -1,14 +1,13 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace data_structures_and_algorithms
 {
-    internal class CC06
-    {
-    }
+    
     public class Node
     {
         public int data;
@@ -39,7 +38,7 @@ namespace data_structures_and_algorithms
         {
             return head == null;
         }
-       
+
         public void InsertFirst(int el)
         {
             if (IsEmpty())
@@ -70,7 +69,7 @@ namespace data_structures_and_algorithms
         }
 
         /////////////////CC06 methods
-        
+
         public void InsertEnd(int el)
         {
             if (IsEmpty())
@@ -82,7 +81,7 @@ namespace data_structures_and_algorithms
             }
             ///tail=tail.next=new node(el);
         }
-        public void InsertBefore(int pos,int el)
+        public void InsertBefore(int pos, int el)
         {
             if (IsInclude(pos))
             {
@@ -94,7 +93,7 @@ namespace data_structures_and_algorithms
                     Node t = head;
                     for (; t != null; t = t.next)
                     {
-                        if (t.next.data == pos )
+                        if (t.next.data == pos)
                             break;
                     }
                     t.next = new Node(el, t.next);
@@ -125,10 +124,10 @@ namespace data_structures_and_algorithms
             if (IsInclude(el))
             {
                 if (head.data == el)//delete head
-                { 
+                {
                     head = head.next;
                 }
-               else if (tail.data == el) // Delete tail
+                else if (tail.data == el) // Delete tail
                 {
                     Node t = head;
                     while (t.next != tail)
@@ -136,7 +135,7 @@ namespace data_structures_and_algorithms
 
                     tail = t;
                     tail.next = null;
-                    
+
                 }
 
                 else      //delete in middle
@@ -148,10 +147,52 @@ namespace data_structures_and_algorithms
                 }
             }
         }
+        public int Size()
+        {
+            int c = 0;
+            Node t = head;
+            for (; t != null; t = t.next)
+                c++;
+            return c;
+        }
+
+       
+        public int kthFromEnd(int k)
+        {
+            if (IsEmpty())
+            {
+                throw new InvalidOperationException("Cannot perform kthFromEnd operation on an empty linked list.");
+            }
+
+            if (k < 0)
+            {
+                throw new ArgumentException("Invalid value of k. k must be a non-negative integer.");
+            }
+
+            int size = Size();
+
+            if (k >= size)
+            {
+                throw new ArgumentException("Invalid value of k. k exceeds the length of the list.");
+            }
+
+            Node t = head;
+            int i = 1;
+            int targetIndex = size - k;
+
+            while (i < targetIndex)
+            {
+                t = t.next;
+                i++;
+            }
+
+            return t.data;
+        }
 
 
     }
 }
-   
-*/
+
+
+
 
