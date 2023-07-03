@@ -14,5 +14,6 @@
 
 [Challenge 06 linked-list-insertions](./readMeFiles/CC06.md)
 
+[Challenge 07 linked-list-kth](./readMeFiles/CC07.md)
 
 ---
