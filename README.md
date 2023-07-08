@@ -16,4 +16,7 @@
 
 [Challenge 07 linked-list-kth](./readMeFiles/CC07.md)
 
+[Challenge 08 linked-list-zip](./readMeFiles/CC08.md)
+
+
 ---
