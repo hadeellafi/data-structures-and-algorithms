@@ -1,13 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
-/*namespace data_structures_and_algorithms
+namespace data_structures_and_algorithms
 {
-    
     public class Node
     {
         public int data;
@@ -156,7 +155,7 @@ using System.Xml.Linq;
             return c;
         }
 
-       
+
         public int kthFromEnd(int k)
         {
             if (IsEmpty())
@@ -188,11 +187,38 @@ using System.Xml.Linq;
 
             return t.data;
         }
+        /////////////////////////Lab08///////////////////////////////////
+       public List zipLists(List list1,List list2)
+        {
+            List result=new List();
+
+            Node temp1 = list1.head;
+            Node temp2 = list2.head;
+            while(temp1!=null && temp2!=null)
+            {
+                result.InsertEnd(temp1.data);
+                result.InsertEnd(temp2.data);
+
+                temp1=temp1.next;
+                temp2=temp2.next;
+
+            }
+            while (temp1 != null)
+            {
+                result.InsertEnd(temp1.data);
+                temp1 = temp1.next;
+            }
+
+            while (temp2 != null)
+            {
+                result.InsertEnd(temp2.data);
+                temp2 = temp2.next;
+            }
+
+            return result;
+
+        }
 
 
     }
-}*/
-
-
-
-
+}
