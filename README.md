@@ -18,5 +18,10 @@
 
 [Challenge 08 linked-list-zip](./readMeFiles/CC08.md)
 
+Challenge 09 linked-list-reverse
+
+[Challenge 10 Stack & Queue Implementation](./readMeFiles/CC10.md)
+
+
 
 ---
