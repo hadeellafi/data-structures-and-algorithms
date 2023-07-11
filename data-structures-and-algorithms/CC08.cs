@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -218,6 +219,24 @@ namespace data_structures_and_algorithms
             return result;
 
         }
+        public List reverseList(List listToreverse)
+        {
+            Node current = listToreverse.head;
+            Node previous = null;
+            Node next = null;
+            while (current != null)
+            {
+                next=current.next;
+                current.next = previous;
+                previous=current;
+                current=next;
+            }
+            listToreverse.tail = listToreverse.head;
+            listToreverse.head = previous;
+
+            return listToreverse;
+        }
+           
 
 
     }

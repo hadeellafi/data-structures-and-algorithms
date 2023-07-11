@@ -67,7 +67,11 @@ namespace data_structures_and_algorithms
             List zipList = new List();
             zipList= zipList.zipLists(list1 ,list2);
             Console.WriteLine(zipList.ToString());
+            zipList.reverseList(zipList);
+            Console.WriteLine(zipList.ToString());
+            Console.WriteLine(zipList.head.data);
 
+            Console.WriteLine(zipList.tail.data);
         }
 
         public static int[] reverce(int[] arr)
