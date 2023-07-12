@@ -59,8 +59,8 @@ namespace CodeChallengesTests
             test.Push(1);
             test.Push(2);
 
-
-            Assert.Equal(2,test.Peek());
+            Assert.Equal(2, test.Pop());
+            Assert.Equal(1,test.Peek());
 
 
         }
