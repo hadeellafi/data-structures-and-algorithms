@@ -7,7 +7,7 @@ namespace CodeChallengesTests
     {
 
         [Fact]
-        public void TestEnqueueIntoQueue()
+        public void TestEnqueueIntoPseudoQueue()
         {
             PseudoQueue queue = new();
 
@@ -46,7 +46,7 @@ namespace CodeChallengesTests
         }
 
         [Fact]
-        public void TestDequeueOnEmptyQueueThrowException()
+        public void TestDequeueOnEmptyPseudoQueueThrowException()
         {
             PseudoQueue queue = new PseudoQueue();
 
