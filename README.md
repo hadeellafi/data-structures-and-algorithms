@@ -22,6 +22,7 @@ Challenge 09 linked-list-reverse
 
 [Challenge 10 Stack & Queue Implementation](./readMeFiles/CC10.md)
 
+[Challenge 11 # Stack Queue Pseudo](./readMeFiles/CC11.md)
 
 
 ---
