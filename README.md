@@ -28,5 +28,6 @@ Challenge 09 linked-list-reverse
 
 [Challenge 13 # Stack Queue brackets](./readMeFiles/CC13.md)
 
+[Challenge 14 # Stack Find Maximum](./readMeFiles/CC14.md)
 
 ---
