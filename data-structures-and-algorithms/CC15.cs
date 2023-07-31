@@ -21,14 +21,37 @@ namespace data_structures_and_algorithms
         }
     }
 
-    public class BinaryTree<T>
+    public class BinaryTree<T> where T : IComparable
     {
         public Node<T> Root { get; set; }
         public BinaryTree()
         {
             Root = null;
         }
+        public T FindMax()
+        {
+            if (Root == null)
+            {
+                throw new InvalidOperationException("The tree is empty. There is no maximum value.");
+            }
+            T maxValue = Root.Value;
+            FindMaxHelper(Root, ref maxValue);
+            return maxValue;
+        }
+        public void FindMaxHelper(Node<T> r, ref T maxValue)
+        {
+            if (r == null)
+            {
+                return;
+            }
+            if (r.Value.CompareTo(maxValue) > 0)
+            {
+                maxValue = r.Value;
+            }
+            FindMaxHelper(r.Left, ref maxValue);
+            FindMaxHelper(r.Right, ref maxValue);
 
+        }
         public List<T> PreOrderTraversal()
         {
             List<T> list = new List<T>();
@@ -79,6 +102,7 @@ namespace data_structures_and_algorithms
                 l.Add(r.Value);
             }
         }
+        
     }
     public class BinarySearchTree<T>: BinaryTree<T> where T : IComparable
     {
@@ -120,6 +144,7 @@ namespace data_structures_and_algorithms
             else
                 return Search(value, r.Right);
         }
+        
     }
     
 }

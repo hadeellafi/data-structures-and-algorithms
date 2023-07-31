@@ -32,4 +32,6 @@ Challenge 09 linked-list-reverse
 
 [Challenge 15 # trees](./readMeFiles/CC15.md)
 
+[Challenge 16 # tree max](./readMeFiles/CC16.md)
+
 ---
