@@ -58,7 +58,8 @@ namespace data_structures_and_algorithms
             PreOrder(Root, list);
             return list;
         }
-
+      
+        
         public void PreOrder(Node<T> r, List<T> l)
         {
             if (r != null)
