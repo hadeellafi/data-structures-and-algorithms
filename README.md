@@ -36,4 +36,7 @@ Challenge 09 linked-list-reverse
 
 [Challenge 17 # tree-breadth-first](./readMeFiles/CC17.md)
 
+[Challenge 18 # Tree Fizz Buzz](./readMeFiles/CC18.md)
+
+
 ---
