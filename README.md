@@ -38,5 +38,8 @@ Challenge 09 linked-list-reverse
 
 [Challenge 18 # Tree Fizz Buzz](./readMeFiles/CC18.md)
 
+Challenge 19 # Tree Odd Sum
+
+
 
 ---

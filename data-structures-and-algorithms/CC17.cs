@@ -33,5 +33,36 @@ namespace data_structures_and_algorithms
 
             return list;
         }
+        public int OddSum(BinarySearchTree<int> tree)
+        {
+            int sum = 0;
+
+            if (tree.Root != null)
+            {
+                Queue<Node<int>> queue = new Queue<Node<int>>();
+                queue.Enqueue(tree.Root);
+
+                while (queue.Count > 0)
+                {
+                    Node<int> current = queue.Dequeue();
+
+                    if (current.Value % 2 != 0)
+                        sum += current.Value;
+
+                    if (current.Left != null)
+                    {
+                        queue.Enqueue(current.Left);
+                    }
+
+                    if (current.Right != null)
+                    {
+                        queue.Enqueue(current.Right);
+                    }
+                }
+            }
+            return sum;
+        }
+
     }
+
 }
