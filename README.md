@@ -38,5 +38,7 @@ Challenge 09 linked-list-reverse
 
 [Challenge 18 # Tree Fizz Buzz](./readMeFiles/CC18.md)
 
+[Challenge 26 # Insertion Sort](./readMeFiles/CC26.md)
+
 
 ---
