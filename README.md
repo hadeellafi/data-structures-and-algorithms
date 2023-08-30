@@ -40,5 +40,8 @@ Challenge 09 linked-list-reverse
 
 [Challenge 26 # Insertion Sort](./readMeFiles/CC26.md)
 
+[Challenge 27 # Merge Sort](./readMeFiles/CC27.md)
+
+
 
 ---
