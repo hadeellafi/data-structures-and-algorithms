@@ -44,6 +44,8 @@ Challenge 09 linked-list-reverse
 
 [Challenge 28 # Sorting: Comparisons](./readMeFiles/CC28.md)
 
+[Challenge 30 # Hash Table](./readMeFiles/CC30.md)
+
 
 
 ---
