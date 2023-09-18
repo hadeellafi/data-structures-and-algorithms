@@ -46,6 +46,8 @@ Challenge 09 linked-list-reverse
 
 [Challenge 30 # Hash Table](./readMeFiles/CC30.md)
 
+[Challenge 31 # Hashmap repeated word](./readMeFiles/CC31.md)
+
 
 
 ---
