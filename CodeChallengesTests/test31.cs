@@ -20,7 +20,6 @@ namespace CodeChallengesTests
 
             string result = RepeatedWordClass.RepeatedWord(input);
 
-            // Assert
             Assert.Equal(expected, result);
         }
     }
