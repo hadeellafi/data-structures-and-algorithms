@@ -48,7 +48,10 @@ Challenge 09 linked-list-reverse
 
 [Challenge 31 # Hashmap repeated word](./readMeFiles/CC31.md)
 
-[Challenge 32 # tree intersection](./readMeFiles/CC32.md)
+[Challenge 32 # Tree intersection](./readMeFiles/CC32.md)
+
+[Challenge 33 # Hashmap left join](./readMeFiles/CC33.md)
+
 
 
 
