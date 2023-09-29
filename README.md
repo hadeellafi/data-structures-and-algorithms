@@ -52,6 +52,11 @@ Challenge 09 linked-list-reverse
 
 [Challenge 33 # Hashmap left join](./readMeFiles/CC33.md)
 
+Challenge 34 # MockInterview
+
+[Challenge 35 # Graph Implementation](./readMeFiles/CC35.md)
+
+
 
 
 
