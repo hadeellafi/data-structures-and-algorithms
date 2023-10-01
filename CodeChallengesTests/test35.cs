@@ -77,6 +77,54 @@ namespace CodeChallengesTests
 
             Assert.Single(graph.GetNeighbors(vertex1));
         }
+        //////CC36
+        [Fact]
+        public void TestBreadthFirst_ReturnsCorrectOrder()
+        {
+            // Arrange
+            Graph<int> graph = new Graph<int>();
+            Vertex<int> node1 = graph.AddVertex(1);
+            Vertex<int> node2 = graph.AddVertex(2);
+            Vertex<int> node3 = graph.AddVertex(3);
+            graph.AddUnDirectEdge(node1, node2);
+            graph.AddUnDirectEdge(node2, node3);
+
+            // Act
+            List<Vertex<int>> result = graph.BreadthFirst(node1);
+
+            // Assert
+            Assert.Equal(3, result.Count);
+            Assert.Equal(node1, result[0]);
+            Assert.Equal(node2, result[1]);
+            Assert.Equal(node3, result[2]);
+        }
+
+        [Fact]
+        public void TestBreadthFirst_ReturnsEmptyListForIsolatedNode()
+        {
+            // Arrange
+            Graph<int> graph = new Graph<int>();
+            Vertex<int> isolatedNode = graph.AddVertex(4);
+
+            // Act
+            List<Vertex<int>> result = graph.BreadthFirst(isolatedNode);
+
+            // Assert
+            Assert.Single(result);
+            Assert.Equal(isolatedNode, result[0]);
+        }
+
+        [Fact]
+        public void TestBreadthFirst_ThrowsExceptionForNonExistentNode()
+        {
+            // Arrange
+            Graph<int> graph = new Graph<int>();
+            Vertex<int> nonExistentNode = new Vertex<int>(5);
+
+            // Act & Assert
+            Assert.Throws<KeyNotFoundException>(() => graph.BreadthFirst(nonExistentNode));
+        }
+
     }
 
 }
