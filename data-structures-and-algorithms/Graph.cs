@@ -9,34 +9,35 @@ namespace data_structures_and_algorithms
     public class Graph<T>
     {
         public Dictionary<Vertex<T>, List<Edge<T>>> AdjacenceyList { get; set; }
+        public Dictionary<T, Vertex<T>> Vertices { get; set; }
+
         private int _size = 0;
         public Graph()
         {
             AdjacenceyList = new Dictionary<Vertex<T>, List<Edge<T>>>();
+            Vertices= new Dictionary<T, Vertex<T>>();
         }
-        public Vertex<T> AddVertex(T vertex)
+        public Vertex<T> AddVertex(T value)
         {
-            Vertex<T> node = new Vertex<T>(vertex);
-
+            Vertex<T> node = new Vertex<T>(value);
             AdjacenceyList.Add(node, new List<Edge<T>>());
-
+            Vertices.Add(value, node);
             _size++;
-
             return node;
-
-
         }
-        public void AddDirectEdge(Vertex<T> a, Vertex<T> b)//connect a with b
+
+        public void AddDirectEdge(Vertex<T> a, Vertex<T> b, int? w = null) 
         {
             if (Contains(a) && Contains(b))
             {
                 AdjacenceyList[a].Add(new Edge<T>
                 {
-                    weight = 0,
+                    weight = w ?? 0,
                     Vertex = b,
                 });
             }
         }
+
         public void AddUnDirectEdge(Vertex<T> a, Vertex<T> b)
         {
             if (Contains(a) && Contains(b))
